@@ -3128,10 +3128,11 @@ img.u-pull-left {
 .s-header__menu-links a {
     display             : block;
     font-family         : var(--font-2);
-    font-size           : 1.4rem;
+    font-size           : 1.7rem;
     font-weight         : 400;
     line-height         : var(--vspace-1);
-    color               : rgba(255, 255, 255, 0.6);
+    font-weight         : 800;
+    color               : rgba(199, 145, 10, 0.942);
     padding             : 0 1.2rem;
     transition-property : color, background-color;
 }
@@ -3387,7 +3388,9 @@ img.u-pull-left {
  * -------------------------------------------------------------------- */
 .s-intro__bg {
     display             : block;
-    background-image    : url(../images/hero-bg.jpg);
+    /* background-image    : url(../images/w-2.png); */
+    /* background-color: #000000; */
+    background     : linear-gradient(0deg, black 15%, rgba(0, 0, 0, 0) 100%);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
@@ -3413,6 +3416,17 @@ img.u-pull-left {
     background     : black;
     pointer-events : none;
     opacity        : .5;
+}
+
+#intro .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, black 15%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none; /* Ensures the overlay doesn't interfere with interactions */
+    z-index: 1;
 }
 
 .s-intro__bg::after {
@@ -3444,19 +3458,37 @@ img.u-pull-left {
     position       : relative;
 }
 
+
 .s-intro__content-bg {
-    display             : block;
-    background-image    : url(../images/intro-bg.jpg);
-    background-repeat   : no-repeat;
-    background-position : center;
-    background-size     : cover;
-    width               : 500px;
-    position            : absolute;
-    top                 : var(--content-padding-top);
-    right               : var(--gutter);
-    bottom              : var(--content-padding-bottom);
-    left                : auto;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    border-radius: 10%;
+    position: absolute;
+    top: var(--content-padding-top);
+    right: var(--gutter);
+    bottom: var(--content-padding-bottom);
+    left: auto;
+    animation: slideShow 30s infinite; /* Adjust the duration and timing */
 }
+
+@keyframes slideShow {
+    0% {
+        background-image: url(../images/w-1.png);
+    }
+    33% {
+        background-image: url(../images/w-2.png);
+    }
+    66% {
+        background-image: url(../images/w-3.png);
+    }
+    100% {
+        background-image: url(../images/w-1.png);
+    }
+}
+
 
 .s-intro__content-bg::before {
     display        : block;
