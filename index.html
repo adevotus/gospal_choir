@@ -17,6 +17,8 @@
     ================================================== -->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -63,11 +65,11 @@
     
                     <ul class="s-header__menu-links">
                         <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
-                        <li><a href="#about" class="smoothscroll">About</a></li>    
-                        <li><a href="#services" class="smoothscroll">Gallery</a></li>
+                        <li><a href="./pages/about.html" class="smoothscroll">About</a></li>    
+                        <li><a href="./pages/gallery.html" class="smoothscroll">Gallery</a></li>
                         <li><a href="#folio" class="smoothscroll">Performances</a></li>
                         <li><a href="#footer" class="smoothscroll">Music</a></li>
-                        <li><a href="#footer" class="smoothscroll">Contact</a></li>
+                        <li><a href="./pages/contact.html" class="smoothscroll">Contact</a></li>
 
                     </ul> <!-- s-header__menu-links -->
 
@@ -113,8 +115,7 @@
             <!-- intro
             ----------------------------------------------- -->
             <section id="intro" class="s-intro target-section" style="background-image: url('images/w-2.png');">
-                <div class="overlay"></div>
-                
+             <div class="overlay"></div>
                 <div class="s-intro__bg"></div>
 
                 <div class="row s-intro__content" >
@@ -149,27 +150,100 @@
             </section> <!-- end s-intro -->
 
 
-            <!-- about
-            ----------------------------------------------- -->
-            <section id="about" class="s-about target-section">
+            <section id="folio" class="s-folio target-section" style="background-color: white;">
 
-                <div class="row section-header" data-num="01">
-                    <h3 class="column lg-12 section-header__pretitle pretitle text-pretitle">Who We Are</h3>
+                <div class="row section-header light-on-dark" style="margin-top: -120px;">
+                    <h3 class="title text-display-1" style="color: black;">Who are we   </h3>
+                    <h3 class="column lg-12 section-header__pretitle text-pretitle">About Us </h3>
                     <div class="column lg-6 stack-on-1100 section-header__primary">
-                        <h2 class="title text-display-1">
-                        Mueller is a branding agency based in Somewhere. 
-                        We shape brand identities and design thoughtful 
-                        digital experiences.
-                        </h2>
+                        <p class="desc" style="color: black;">
+                            Wonders Choir is a branding agency based in Somewhere. 
+                            We shape brand identities and design thoughtful 
+                            digital experiences.                        </p>
+                            <p class="desc" style="color: black;">
+                                Wonders Choir is a branding agency based in Somewhere. 
+                                We shape brand identities and design thoughtful 
+                                digital experiences.                        </p>    
+                                <div class="">
+                                    <a href="#download" class="btn btn--stroke" style="background-color: black;" >More About Us</a>
+                                   
+                                </div>
                     </div>
-                    <div class="column lg-6 stack-on-1100 section-header__secondary">
+                    <div class="column lg-6 stack-on-1100 section-header__primary">
+                      
                         <p class="desc">
-                        Deleniti dolorem reiciendis repellat labore velit dolor nihil qui. 
-                        Deserunt sapiente odio quos quisquam dolorem cumque et omnis. 
-                        Minima quibusdam sequi consequatur magni non sunt est.
+                            <h5 class="column lg-12 section-header__pretitle text-pretitle text-primary">Mission </h5> 
+                        Quia iusto totam facilis ut atque quidem quis maiores iure. 
+                        Facilis mollitia enim illo sed et totam commodi. Velit a 
+                        recusandae sequi consequatur est dolorum eaque.
+                        </p>
+                        <h5 class="column lg-12 section-header__pretitle text-pretitle">Vision </h5>
+
+                        <p class="desc">
+                        Quia iusto totam facilis ut atque quidem quis maiores iure. 
+                        Facilis mollitia enim illo sed et totam commodi. Velit a 
+                        recusandae sequi consequatur est dolorum eaque.
                         </p>
                     </div>
                 </div> <!-- end section-header -->
+
+                <div id="bricks" class="row bricks">
+                    <div class="column lg-12 masonry">
+                        <div class="bricks-wrapper">
+
+                            <div class="grid-sizer"></div>
+
+                            <article class="brick brick--double entry">
+                                <a href="" class="">
+                                    <div class="entry__thumb">
+                                        <img src="images/w-4.jpg" alt="">
+                                    </div>
+                        
+                                </a>
+                            </article> <!-- entry -->
+
+                            <article class="brick brick--double entry">
+                                <a href="" class="">
+                                    <div class="entry__thumb">
+                                        <img src="images/w-7.jpg" alt="">
+                                    </div>
+                                
+                                </a>
+                            </article> <!-- entry -->
+
+
+                        </div> <!-- end bricks-wrapper -->
+                    </div> <!-- end masonry -->
+                </div> <!-- end bricks -->
+
+
+              
+            </section> <!-- end s-folio -->
+
+            <!-- about
+            ----------------------------------------------- -->
+            <!-- <section id="about" class="s-about target-section">
+
+                <div class="row section-header" data-num="About us">
+                    <h3 class="column lg-12 section-header__pretitle pretitle text-pretitle">Who We Are</h3>
+                    <div class="column lg-6 stack-on-1100 section-header__primary">
+                        <h2 class="title text-display-1">
+                        Wonders Choir is a branding agency based in Somewhere. 
+                        We shape brand identities and design thoughtful 
+                        digital experiences.
+                        </h2>
+                        <p style="text-align: justify;">
+                            Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                            Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                            Sunt suscipit voluptas ipsa in tempora esse soluta sint aliquam rhoncus elit.
+                        </p>
+                    </div>
+                    <div class="column lg-6 stack-on-1100 section-header__secondary">
+                        <div class="" style="height: 200px;">
+                            <img src="images/AWC-33.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
 
                 <div class="row process-list list-block show-ctr block-lg-one-half block-tab-whole">
     
@@ -184,8 +258,7 @@
                             Sunt suscipit voluptas ipsa in tempora esse soluta sint aliquam rhoncus elit.
                             </p>
                         </div>
-                    </div> <!-- end list-block__item -->
-
+                    </div>
                     <div class="column list-block__item">
                         <div class="list-block__title">
                             <h3 class="h5">Design</h3>
@@ -197,7 +270,7 @@
                             magnam. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim suscipit.
                             </p>
                         </div>
-                    </div> <!-- end list-block__item -->
+                    </div> 
         
                     <div class="column list-block__item">
                         <div class="list-block__title">
@@ -211,7 +284,7 @@
                             illum nemo rerum voluptate. 
                             </p>
                         </div>
-                    </div> <!-- end list-block__item -->
+                    </div> 
         
                     <div class="column list-block__item">
                         <div class="list-block__title">
@@ -224,15 +297,13 @@
                             Quas at illum. Dolores itaque architecto. Magnam voluptatem aperiam. Velit omnis est.
                             </p>
                         </div>
-                    </div> <!-- end list-block__item -->
+                    </div> 
 
-                </div> <!-- end process-list -->
+                </div> 
+            </section>  -->
 
-            </section> <!-- end s-about -->
 
-
-            <!-- services
-            ----------------------------------------------- -->
+            <!-- services ----------------------------------------------- -->
             <section id="services" class="s-services target-section">
 
                 <div class="row section-header" data-num="02">
@@ -712,46 +783,14 @@
         ================================================== -->
         <footer id="footer" class="s-footer target-section">
 
-            <div class="row section-header" data-num="04">
-                <h3 class="column lg-12 section-header__pretitle text-pretitle">Get In Touch</h3>
+            <div class="row section-header">
+                <h3 class="column lg-12 section-header__pretitle text-pretitle">AWC</h3>
                 <div class="column lg-6 stack-on-1100 section-header__primary">
-                    <h2 class="title text-display-1">
+                    <p class="title text-display-2">
                     Have an idea or an epic project in mind? Talk to us. 
                     Let's work together and make something great. 
-                    Drop us a line at <a href="mailto:#0" title="">hello@mueller.com</a>
-                    </h2>
-                </div>    
-                <div class="column lg-6 stack-on-1100 section-header__secondary">
-                    
-                    <div class="contact-block">
-                        <h6>Where To Find Us</h6>
-                        <p>
-                        1600 Amphitheatre Parkway <br>
-                        Mountain View, California <br>
-                        94043  US
-                        </p>
-                    </div>
-
-                    <div class="contact-block">
-                        <h6>Contact Infos</h6>
-                        <ul class="contact-list">
-                            <li><a href="tel:197-543-2345">+197 543 2345</a></li>
-                            <li><a href="tel:197-123-9876">+197 123 9876</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div> <!-- end section-header -->
-
-            <div class="row list-block block-lg-one-half block-tab-whole block-stack-on-1000 s-footer__btns">
-                <div class="column list-block__item">
-                    <div class="s-footer__contact-btn">
-                        <a href="mailto:#0" class="btn btn--primary u-fullwidth">
-                            Let's Talk 
-                        </a>
-                    </div>
-                </div>
-                <div class="column list-block__item">
+                    Drop us a line at 
+                    </p>
                     <div class="subscribe-form s-footer__subscribe">
                         <h6>Subscribe</h6>
                         <form id="mc-form" class="mc-form">
@@ -761,8 +800,34 @@
                             <div class="mc-status"></div>
                         </form>
                     </div>
+                </div>  
+                <div class="column lg-3 stack-on-1100 section-header__primary">
+                    <h6>Quick Links</h6>
+                    <ul class="contact-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">News & Events</a></li>
+                        <li><a href="#">Performances</a></li>
+                        <li><a href="#">Contact us </a></li>
+                     
+                    </ul>
+                </div>   
+                <div class="column lg-3 stack-on-1100 section-header__secondary">
+                    
+                    <div class="contact-block">
+                        <h6>Where To Find Us</h6>
+                        <p> Dar es salaam ,Tanzania <br>
+                            +255 75333 333 3
+                         <br>
+                          
+                        </p>
+                    </div>
+
                 </div>
-            </div> <!-- end s-footer__btns -->
+               
+            </div> <!-- end section-header -->
+
+        
 
             <div class="row s-footer__bottom">
 
@@ -797,8 +862,7 @@
 
                 <div class="column lg-6 tab-12 s-footer__bottom-right">
                     <div class="ss-copyright">
-                        <span>© Copyright Mueller 2022</span> 
-                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a> Distribution By <a href="https://themewagon.com">ThemeWagon</a> </span>
+                        <span>© Copyright AWC 2024</span> 
                     </div>
                 </div>
 
@@ -817,6 +881,8 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
